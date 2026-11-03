@@ -156,6 +156,10 @@ main h1 {
     width: 90%;
 }
 
+.card li {
+    margin: .5rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--dark-bg-color);
