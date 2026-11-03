@@ -9,6 +9,7 @@
 :root {
     --light-text-color: rgb(252, 252, 252);
     --dark-bg-color: rgb(89, 1, 116);
+    --contrast-gray: rgb(110, 110, 110);
 }
 
 /* Body */
@@ -119,7 +120,7 @@ main h1 {
 
 .card hr {
     width: 80%;
-    color: gray;
+    color: var(--contrast-gray);
     margin: 0 auto;
 }
 
@@ -137,7 +138,7 @@ main h1 {
     padding: 1rem;
     text-align: center;
     justify-content: center;
-    color: rgb(110, 110, 110);
+    color: var(--contrast-gray);
 }
 
 #country-description {
