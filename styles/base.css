@@ -91,6 +91,7 @@ main h1 {
 .card img {
     width: 150px;
     height: auto;
+    object-fit: cover;
     border-radius: 5px;
     margin: 1em;
 }
