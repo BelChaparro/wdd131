@@ -160,6 +160,12 @@ main h1 {
     margin: .5rem;
 }
 
+.card a:hover {
+    color: var(--dark-bg-color);
+    font-weight: 600;
+    text-decoration: wavy;
+}
+
 /* Footer */
 footer {
     background-color: var(--dark-bg-color);
