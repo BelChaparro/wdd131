@@ -1,0 +1,204 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Kranky&family=Pangolin&display=swap');
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --light-text-color: rgb(252, 252, 252);
+    --dark-bg-color: rgb(89, 1, 116);
+}
+
+/* Body */
+body {
+    font-family: "Funnel Sans", sans-serif;
+}
+
+/* Header */
+#course-title {
+    display: block;
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
+    font-family: "Kranky", serif;
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(61, 61, 61);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--light-text-color);
+    font-family: "Funnel Sans", sans-serif;
+    padding: .7rem;
+}
+
+nav a:hover {
+    color: rgb(98, 171, 235);
+    text-decoration: overline;
+}
+
+/* Main */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    padding: 1rem;
+    font-family: "Kranky", serif;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    justify-content: center;
+    grid-template: auto auto 1fr / auto 1fr 1fr auto;
+    align-items: center;
+    border: 1px solid rgb(207, 207, 207);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.card-heading {
+    width: 100%;
+    text-align: center;
+    grid-column: 1 / -1;
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
+    border-radius: 5px 5px 0 0;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin: 1em;
+}
+
+#about-me {
+    grid-column: 1 / 4;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: left;
+}
+
+#self-image{
+    grid-column: 4 / -1;
+}
+
+.card h3,
+.card hr {
+    grid-column: 1 / 4;
+}
+
+.card h3 {
+    text-align: center;
+    font-family: "Pangolin", cursive;
+}
+
+.card hr {
+    width: 80%;
+    color: gray;
+    margin: 0 auto;
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / 2;
+    max-width: 100%;
+}
+
+.flag label{
+    font-style: italic;
+    font-size: small;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    color: gray;
+}
+
+#country-description {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    text-align: left;
+    display: flex;
+    padding: 1rem;
+}
+
+.card ul {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    margin: 0.5rem 2rem;
+    width: 90%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg-color);
+    padding: 1rem;
+    color: var(--light-text-color);
+}
+
+footer p {
+    text-align: center;
+}
+
+#lastModified {
+    color: rgb(170, 211, 247);
+    font-family: "Pangolin", cursive;
+    font-size: small;
+}
+
+/* Mobile View */
+@media (max-width: 640px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .card {
+        grid-column: auto;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-heading {
+        border-radius: 0;
+    }
+
+    .flag {
+        width: max-content;
+    }
+}
