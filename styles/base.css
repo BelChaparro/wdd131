@@ -136,7 +136,7 @@ main h1 {
     padding: 1rem;
     text-align: center;
     justify-content: center;
-    color: gray;
+    color: rgb(110, 110, 110);
 }
 
 #country-description {
