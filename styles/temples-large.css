@@ -1,0 +1,30 @@
+/* Large view */
+@media screen and (min-width: 37.5em) {
+
+    /* Header*/
+    header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+
+    #menu {
+        display: none; /* Hide ☰ button */
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /* Main */
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        place-items: center;
+    }
+}

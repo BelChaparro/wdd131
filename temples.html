@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+
+    <meta name="author" content="Belén Chaparro" />
+    <meta name="description"
+        content="Temples picture album page. This page is responsive for both small and larger views, 
+        uses a hamburguer menu and responds to user interaction." />
+    
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="title">Temple Album</span>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="temple-grid">
+        <figure>
+            <img alt="Picture of the Bahía Blanca Argentina temple" src="images/bahia-blanca-argentina-temple.jpeg">
+            <figcaption>Bahía Blanca, Argentina.</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the Buenos Aires Argentina temple" src="images/buenos-aires-argentina-temple.jpeg">
+            <figcaption>Buenos Aires, Argentina</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the Córdoba Argentina temple" src="images/cordoba-argentina-temple.jpeg">
+            <figcaption>Córdoba, Argentina</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the Mendoza Argentina temple" src="images/mendoza-argentina-temple.jpeg">
+            <figcaption>Mendoza, Argentina</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the Salta Argentina temple" src="images/salta-argentina-temple.jpeg">
+            <figcaption>Salta, Argentina</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the Brasilia Brazil temple" src="images/brasilia-brazil-temple.jpeg">
+            <figcaption>Brasilia, Brazil</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the Manaus Brazil temple" src="images/manaus-brazil-temple.jpeg">
+            <figcaption>Manaus, Brazil</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the Porto Alegre Brazil temple" src="images/porto-alegre-brazil-temple.jpeg">
+            <figcaption>Porto Alegre, Brazil</figcaption>
+        </figure>
+        <figure>
+            <img alt="Picture of the São Paulo Brazil temple" src="images/sao-paulo-brazil-temple.jpeg">
+            <figcaption>São Paulo, Brazil</figcaption>
+        </figure>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | A. Belén Chaparro | Argentina</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

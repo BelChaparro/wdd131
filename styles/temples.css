@@ -1,0 +1,144 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --soft-purple-bg: rgba(136, 66, 136, 0.384);
+    --light-text-color: rgb(252, 252, 252);
+    --dark-text-color: rgb(31, 18, 31);
+    --dark-purple-bg: rgb(136, 66, 136);
+}
+
+/* Body */
+body {
+    font-family: "Life Savers", serif;
+}
+
+/* Header */
+header {
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    background-color: #e7e6e0;
+    margin: 0 auto;
+    box-shadow: 0 0 15px var(--dark-purple-bg);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--dark-text-color);
+    padding: 1rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--soft-purple-bg);
+    color: var(--dark-text-color);
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+#menu::before {
+    color: var(--dark-text-color);
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "×";
+    color: beige;
+}
+
+.navigation {
+    background-color: var(--soft-purple-bg);
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark-text-color);
+    font-size: larger;
+    font-weight: bold;
+    padding: .7rem;
+}
+
+.navigation a:hover {
+    color: var(--dark-purple-bg);
+    background-color: beige;
+    text-decoration: overline;
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: var(--soft-purple-bg);
+}
+
+/* Main*/
+main {
+    max-width: 80%;
+    margin: 0 auto; /*centered horizontally*/
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 800;
+    color: var(--dark-text-color);
+}
+
+.temple-grid {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+figure img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-weight: 700;
+    color: var(--dark-text-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-purple-bg);
+    padding: 1rem;
+    color: var(--light-text-color);
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; */ /* To place footer at the end of the page. */
+}
+
+footer p {
+    text-align: center;
+}
+
+#lastModified {
+    color: var(--light-text-color);
+    font-size: small;
+}
