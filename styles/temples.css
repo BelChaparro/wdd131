@@ -125,6 +125,7 @@ figcaption {
 
 /* Footer */
 footer {
+    font-weight: bold;
     background-color: var(--dark-purple-bg);
     padding: 1rem;
     color: var(--light-text-color);
