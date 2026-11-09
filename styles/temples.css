@@ -125,21 +125,22 @@ figcaption {
 
 /* Footer */
 footer {
-    font-weight: bold;
+    font-size: 1.2rem;
     background-color: var(--dark-purple-bg);
     padding: 1rem;
     color: var(--light-text-color);
+    text-align: center;
     /* position: fixed;
     left: 0;
     bottom: 0;
     width: 100%; */ /* To place footer at the end of the page. */
 }
 
-footer p {
-    text-align: center;
+#currentYear, 
+#lastModified {
+    font-weight: 900;
 }
 
 #lastModified {
     color: var(--light-text-color);
-    font-size: small;
 }
