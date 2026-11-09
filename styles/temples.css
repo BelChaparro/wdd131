@@ -90,9 +90,11 @@ nav {
     display: block;
 }
 
-.active {
-    background-color: var(--soft-purple-bg);
+a.active {
+    background-color: var(--dark-purple-bg);
+    color: var(--light-text-color);
 }
+
 
 /* Main*/
 main {
