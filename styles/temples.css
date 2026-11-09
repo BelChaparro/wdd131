@@ -10,6 +10,7 @@
     --soft-purple-bg: rgba(136, 66, 136, 0.267);
     --light-text-color: rgb(252, 252, 252);
     --dark-text-color: rgb(65, 35, 65);
+    --darker-text-color: rgb(31, 18, 31);
     --dark-purple-bg: rgb(136, 66, 136);
     --light-beige-bg: rgb(230, 228, 218);
     --medium-beige-bg: rgb(245, 245, 220);
@@ -78,7 +79,7 @@ nav {
     display: none;
     text-decoration: none;
     text-align: center;
-    color: var(--dark-text-color);
+    color: var(--darker-text-color);
     font-size: larger;
     font-weight: bold;
     padding: .7rem;
