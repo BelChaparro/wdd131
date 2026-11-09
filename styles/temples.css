@@ -9,8 +9,10 @@
 :root {
     --soft-purple-bg: rgba(136, 66, 136, 0.384);
     --light-text-color: rgb(252, 252, 252);
-    --dark-text-color: rgb(31, 18, 31);
+    --dark-text-color: rgb(65, 35, 65);
     --dark-purple-bg: rgb(136, 66, 136);
+    --light-beige-bg: rgb(230, 228, 218);
+    --medium-beige-bg: rgb(245, 245, 220);
 }
 
 /* Body */
@@ -23,7 +25,7 @@ header {
     padding: 1rem;
     display: grid;
     grid-gap: 1rem;
-    background-color: #e7e6e0;
+    background-color: var(--light-beige-bg);
     margin: 0 auto;
     box-shadow: 0 0 15px var(--dark-purple-bg);
 }
@@ -36,8 +38,10 @@ header {
 }
 
 #menu {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     padding: 0 0.5rem;
+    margin: 5px;
     border: 0;
     border-radius: 5px;
     background-color: var(--soft-purple-bg);
@@ -55,7 +59,7 @@ header {
 
 #menu.open::before {
     content: "×";
-    color: beige;
+    color: var(--light-beige-bg);
 }
 nav {
     display: flex;
@@ -82,7 +86,8 @@ nav {
 
 .navigation a:hover {
     color: var(--dark-purple-bg);
-    background-color: beige;
+    background-color: var(--light-beige-bg);
+    border: 2px solid var(--dark-purple-bg);
     text-decoration: overline;
 }
 
