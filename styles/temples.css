@@ -130,7 +130,7 @@ figure img{
 img {
     display: block;
     margin: 0 auto;
-    width: 330px;
+    max-width: 500px;
     height: auto;
 }
 
