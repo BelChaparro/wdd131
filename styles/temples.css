@@ -7,10 +7,10 @@
 
 /* Colors */
 :root {
-    --soft-purple-bg: #88428817;
+    --soft-purple-bg: #88428833;
     --light-text-color: #fcfcfc;
     --dark-text-color: #412341;
-    --darker-text-color: #020102;
+    --darker-text-color: #1f121f;
     --dark-purple-bg: #884288;
     --light-beige-bg: #e6e4da;
     --medium-beige-bg: #f5f5dc;
@@ -60,7 +60,7 @@ header {
 
 #menu.open::before {
     content: "×";
-    color: var(--dark-text-color);
+    color: var(--light-beige-bg);
 }
 nav {
     display: flex;
