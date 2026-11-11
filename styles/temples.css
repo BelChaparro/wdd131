@@ -7,12 +7,10 @@
 
 /* Colors */
 :root {
-    --soft-purple-bg: #88428833;
-    --light-text-color: #fcfcfc;
+    /*--light-text-color: #fcfcfc;*/
     --dark-text-color: #412341;
-    --darker-text-color: #1f121f;
     --dark-purple-bg: #884288;
-    --light-beige-bg: #e6e4da;
+    --light-beige: #e6e4da;
     --medium-beige-bg: #f5f5dc;
 }
 
@@ -23,10 +21,9 @@ body {
 
 /* Header */
 header {
-    padding: 1rem;
+    padding: .5rem;
     display: grid;
-    grid-gap: 1rem;
-    background-color: var(--light-beige-bg);
+    background-color: var(--dark-purple-bg);
     margin: 0 auto;
     box-shadow: 0 0 15px var(--dark-purple-bg);
 }
@@ -34,37 +31,35 @@ header {
 .title {
     font-size: 2rem;
     font-weight: 900;
-    color: var(--dark-text-color);
+    color: var(--light-beige);
     padding: 1rem;
 }
 
 #menu {
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 0 0.5rem;
-    margin: 5px;
+    padding: 5px;
     border: 0;
     border-radius: 5px;
-    background-color: var(--soft-purple-bg);
-    color: var(--dark-text-color);
+    background-color: var(--dark-purple-bg);
+    color: var(--light-beige);
     display: block;
     position: absolute;
     right: 2rem;
-    top: 2rem;
+    top: 1.7rem;
 }
 
 #menu::before {
-    color: var(--dark-text-color);
+    color: var(--light-beige);
     content: "☰";
 }
 
 #menu.open::before {
     content: "×";
-    color: var(--light-beige-bg);
+    color: var(--light-beige);
 }
 nav {
     display: flex;
-    background-color: var(--soft-purple-bg);
 }
 
 .navigation {
@@ -79,7 +74,7 @@ nav {
     display: none;
     text-decoration: none;
     text-align: center;
-    color: var(--darker-text-color);
+    color: var(--light-beige);
     font-size: larger;
     font-weight: bold;
     padding: .7rem;
@@ -87,8 +82,7 @@ nav {
 
 .navigation a:hover {
     color: var(--dark-purple-bg);
-    background-color: var(--light-beige-bg);
-    border: 2px solid var(--dark-purple-bg);
+    background-color: var(--light-beige);
     text-decoration: overline;
 }
 
@@ -97,8 +91,8 @@ nav {
 }
 
 a.active {
-    background-color: var(--dark-purple-bg);
-    color: var(--light-text-color);
+    background-color: var(--medium-beige-bg);
+    color: var(--dark-text-color);
 }
 
 
@@ -146,7 +140,7 @@ footer {
     font-size: 1.2rem;
     background-color: var(--dark-purple-bg);
     padding: 1rem;
-    color: var(--light-text-color);
+    color: var(--light-beige);
     text-align: center;
     /* position: fixed;
     left: 0;
@@ -160,5 +154,5 @@ footer {
 }
 
 #lastModified {
-    color: var(--light-text-color);
+    color: var(--light-beige);
 }
