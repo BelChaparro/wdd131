@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Activity</title>
+
+    <meta name="author" content="Belén Chaparro" />
+    <meta name="description"
+        content="Responsive images activity for WDD131 - Dynamic Web Fundamentals." />
+    
+    <link rel="stylesheet" href="styles/responsive-images.css" />
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/hero-large.jpg" >
+                <source media="(min-width: 1000px)" srcset="images/hero-medium.jpg">
+                <img src="images/hero-small.jpg" alt="Buenos Aires, Argentina temple." width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
