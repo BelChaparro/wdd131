@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+
+    <meta name="author" content="Belén Chaparro" />
+    <meta name="description"
+        content="Information about the country of Argentina." />
+    
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 800px)" srcset="#">
+            <source media="(min-width: 400px)" srcset="#">
+            <img src="#" alt="A scenic view of Argentina">
+        </picture>
+        <section class="data-card">
+            <h2>Data</h2>
+            <div>
+                <dl>
+                    <dt>Area: <dt>
+                    <dd>2,780,085 km²<dd>
+
+                    <dt>Population: <dt>
+                    <dd>46,700,000<dd>
+
+                    <dt>Capital: <dt>
+                    <dd>Ciudad Autónoma de Buenos Aires<dd>
+
+                    <dt>Languages: <dt>
+                    <dd>Spanish<dd>
+
+                    <dt>Currency: <dt>
+                    <dd>Argentine Peso<dd>
+
+                    <dt>Time Zone: <dt>
+                    <dd>GMT-3<dd>
+
+                    <dt>Calling Code: <dt>
+                    <dd>+54<dd>
+
+                    <dt>Internet TLD: <dt>
+                    <dd>.ar<dd>
+                </dl>
+            </div>
+        </section>
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <img src="#" alt="Weather Icon">
+            <dl>
+                <dt>Temperature: </dt>
+                <dd><span id="temperature"></span> °C</dd>
+
+                <dt>Conditions: </dt>
+                <dd><span id="conditions"></span> %</dd>
+
+                <dt>Wind: </dt>
+                <dd><span id="wind"></span> km/h</dd>
+
+                <dt>Wind Chill: </dt>
+                <dd><span id="windChill"></span> °C</dd>
+            </dl>
+        </section>
+    </main>
+<footer>
+    <p>&copy; <span id="currentYear"></span> | A. Belén Chaparro | Argentina</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+</body>
+
+</html>
