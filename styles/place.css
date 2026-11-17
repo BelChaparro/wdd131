@@ -7,25 +7,101 @@
 
 /* Colors */
 :root {
-
+    --arg-blue: #74ACDF;
+    --arg-blue-transparent: #74abdf7c;
+    --arg-yellow: #F6B40E;
+    --arg-brown: #2b1408;
+    --light-text-color: #fcfcfc;
 }
 
 /* Body */
 body {
-    
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.5;
 }
 
 /* Header */
 header {
-    
+    background-color: var(--arg-blue);
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 15px solid var(--arg-yellow);
+    color: var(--arg-brown);
+}
+
+h1 {
+    font-size: 3rem;
+    -webkit-text-stroke: 0.5px var(--light-text-color); /* Border for each letter */
+    /*text-shadow: 0 1px 2px var(--light-text-color);*/ /* Shadow for each letter */
 }
 
 /* Main */
 main {
-    
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-bottom: 10px solid var(--arg-blue);
+}
+
+.data-card,
+.weather-card {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--arg-brown);
+}
+
+.data-card h2,
+.weather-card h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--arg-brown);
+}
+
+.data-card h2 {
+    margin-bottom: 1rem;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
+}
+
+dt {
+    grid-column: 1;
+    font-weight: bold;
+    text-align: right;
+}
+
+dd {
+    grid-column: 2;
+    margin: 0;
+    text-align: left;
+}
+
+.weather-card img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
-    
+    background-color: var(--arg-blue);
+    text-align: center;
+    padding: 1rem;
+    color: var(--light-text-color);
+}
+
+#current-year,
+#last-modified {
+    color: var(--arg-brown);
 }

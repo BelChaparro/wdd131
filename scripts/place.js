@@ -2,7 +2,7 @@
 const today = new Date();
 
 // Get Year and set it on page
-document.getElementById("currentYear").textContent = today.getFullYear();
+document.getElementById("current-year").textContent = today.getFullYear();
 
 // Set lastModified property
-document.getElementById("lastModified").textContent = document.lastModified;
+document.getElementById("last-modified").textContent = document.lastModified;

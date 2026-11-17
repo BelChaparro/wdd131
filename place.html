@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Page</title>
 
-    <meta name="author" content="Belén Chaparro" />
+    <meta name="author" content="Belén Chaparro">
     <meta name="description"
-        content="Information about the country of Argentina." />
+        content="Information about the country of Argentina.">
     
-    <link rel="stylesheet" href="styles/place.css" />
-    <link rel="stylesheet" href="styles/place-large.css" />
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+     <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="scripts/place.js" defer></script>
 </head>
@@ -19,53 +24,51 @@
         <h1>Argentina</h1>
     </header>
     <main>
-        <picture>
-            <source media="(min-width: 800px)" srcset="#">
-            <source media="(min-width: 400px)" srcset="#">
-            <img src="#" alt="A scenic view of Argentina">
+        <picture class="hero">
+            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" alt="A scenic view of the patagonia in Argentina" width="500" height="644">
         </picture>
         <section class="data-card">
             <h2>Data</h2>
-            <div>
                 <dl>
-                    <dt>Area: <dt>
-                    <dd>2,780,085 km²<dd>
+                    <dt>Area: </dt>
+                    <dd>2,780,085 km²</dd>
 
-                    <dt>Population: <dt>
-                    <dd>46,700,000<dd>
+                    <dt>Population: </dt>
+                    <dd>46,700,000</dd>
 
-                    <dt>Capital: <dt>
-                    <dd>Ciudad Autónoma de Buenos Aires<dd>
+                    <dt>Capital: </dt>
+                    <dd>Ciudad Autónoma de Buenos Aires</dd>
 
-                    <dt>Languages: <dt>
-                    <dd>Spanish<dd>
+                    <dt>Languages: </dt>
+                    <dd>Spanish</dd>
 
-                    <dt>Currency: <dt>
-                    <dd>Argentine Peso<dd>
+                    <dt>Currency: </dt>
+                    <dd>Argentine Peso</dd>
 
-                    <dt>Time Zone: <dt>
-                    <dd>GMT-3<dd>
+                    <dt>Time Zone: </dt>
+                    <dd>GMT-3</dd>
 
-                    <dt>Calling Code: <dt>
-                    <dd>+54<dd>
+                    <dt>Calling Code: </dt>
+                    <dd>+54</dd>
 
-                    <dt>Internet TLD: <dt>
-                    <dd>.ar<dd>
+                    <dt>Internet TLD: </dt>
+                    <dd>.ar</dd>
                 </dl>
-            </div>
         </section>
         <section class="weather-card">
-            <h2>Weather</h2>
-            <img src="#" alt="Weather Icon">
+            <h2>Weather <span id="weather-emoji"></span></h2>
+            <img src="images/sunny-icon.svg" alt="Weather Icon" width="50" height="50">
             <dl>
                 <dt>Temperature: </dt>
-                <dd><span id="temperature"></span> °C</dd>
+                <dd><span id="temperature">22</span> °C</dd>
 
                 <dt>Conditions: </dt>
-                <dd><span id="conditions"></span> %</dd>
+                <dd><span id="conditions">82</span> %</dd>
 
                 <dt>Wind: </dt>
-                <dd><span id="wind"></span> km/h</dd>
+                <dd><span id="wind">21</span> km/h</dd>
 
                 <dt>Wind Chill: </dt>
                 <dd><span id="windChill"></span> °C</dd>
@@ -73,8 +76,8 @@
         </section>
     </main>
 <footer>
-    <p>&copy; <span id="currentYear"></span> | A. Belén Chaparro | Argentina</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
+    <p>&copy; <span id="current-year"></span> | A. Belén Chaparro | Argentina</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
 </footer>
 </body>
 
