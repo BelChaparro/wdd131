@@ -105,10 +105,5 @@ footer {
     background-color: var(--arg-blue);
     text-align: center;
     padding: 1rem;
-    color: var(--light-text-color);
-}
-
-#current-year,
-#last-modified {
     color: var(--arg-brown);
 }
