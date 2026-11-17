@@ -17,6 +17,12 @@
 
 /* Large view */
 @media screen and (min-width: 62.5em) { /*1000px */
+    /* Body */
+    body {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
     /* Header*/
     h1 {
         font-size: 4rem;
