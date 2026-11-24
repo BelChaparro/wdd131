@@ -166,11 +166,8 @@ function createTempleCard(filteredTemples) {
                 <dd>${temple.area} sq ft</dd>
             </dl>
             <figure>
-            <img alt="Image of ${temple.templeName} Temple" src="${temple.imageUrl}" sizes="(max-width: 500px) 400px, 250px" loading="lazy">
+            <img alt="Image of ${temple.templeName} Temple" src="${temple.imageUrl}" width="400" height="250" loading="lazy">
             </figure>
             </section>`
     ));
 }
-
-
-// Respond to the main nav items by filtering and displaying the temples
