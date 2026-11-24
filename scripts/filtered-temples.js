@@ -148,13 +148,9 @@ smallTemplesLink.addEventListener("click", () => {
 // Create temple cards function
 function createTempleCard(filteredTemples) {
     const templeGrid = document.querySelector(".temple-grid");
-  templeGrid.innerHTML = "";
-
+    templeGrid.innerHTML = "";
     filteredTemples.forEach(
-      (temple, index) => {
-        const loadAttribute = index < 2 ? 'fetchpriority="high"' : 'loading="lazy"';
-        templeGrid.innerHTML +=
-        
+    (temple) => (templeGrid.innerHTML +=
         `<section class="temple-card">
             <h3>${temple.templeName}</h3>
             <dl>
@@ -170,8 +166,8 @@ function createTempleCard(filteredTemples) {
                 <dd>${temple.area} sq ft</dd>
             </dl>
             <figure>
-            <img alt="Image of ${temple.templeName} Temple" src="${temple.imageUrl}" width="400" height="250" ${loadAttribute}>
+            <img alt="Image of ${temple.templeName} Temple" src="${temple.imageUrl}" width="400" height="250" loading="lazy">
             </figure>
             </section>`
-    });
+    ));
 }
