@@ -1,0 +1,141 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --white: #FFFFFF;
+    --light-bg: #fAf6EC;
+    --accent: #63326E;
+    --dark-text: #582B14;
+    --primary: #55542A;
+
+}
+
+/* Body */
+body, #body-text {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+#headings, h1, h2 {
+    font-family: "Agrave Pro", cursive;
+    font-weight: 700;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    color: var(--light-bg);
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+}
+
+#site-logo {
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+header p, h1 {
+    grid-column: 2;
+    margin-left: 1rem;
+}
+
+header p {
+    grid-row: 1;
+    align-self: flex-end;
+}
+
+h1 {
+    grid-row: 2;
+    align-self: flex-start;
+}
+
+/* Main */
+main {
+    color: var(--dark-text);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    line-height: 1.5;
+}
+
+h2 {
+    margin-top: 15px;
+    margin: 1.5rem 0 .7rem 0;
+    border: none;
+    border-bottom: 3.5px solid var(--accent);
+    display: inline-block;
+}
+
+#domain-url {
+    background-color: var(--light-bg);
+    color: var(--accent);
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--primary);
+    margin-bottom: 2rem;;
+}
+
+/* Scenarios */
+#scenarios-list {
+    margin-left: 1.2rem;
+}
+
+/* Color Scheme */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+.color-palette span {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+    display: block;
+}
+
+.color-card {
+    border-radius: 5px;
+}
+
+#primary {
+    background-color: var(--primary);
+}
+
+#background {
+    background-color: var(--light-bg);
+}
+
+#accent {
+    background-color: var(--accent);
+}
+
+#text {
+    background-color: var(--dark-text);
+}
+
+.color-info {
+    border: 1px solid var(--primary);
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    font-size: .85rem;
+    color: var(--dark-text);
+    padding: 0.75rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--light-bg);
+    padding: 1rem;
+    text-align: center;
+}
